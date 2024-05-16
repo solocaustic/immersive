@@ -1,3 +1,16 @@
+body {
+    background-color: rgb(17, 17, 17);
+}
+
 .grid-item {
     margin-bottom: 20px; /* Add some space between grid items */
+}
+
+.card {
+    border: 1px solid rgb(80, 80, 80); /* Card border color */
+}
+
+.card-title, .card-text {
+    font-family: 'Yuji Syuku', sans-serif; /* Font family */
+    color: rgba(255, 255, 255, 0.9); /* Light grey text color */
 }
