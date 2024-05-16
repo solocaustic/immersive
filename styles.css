@@ -1,17 +1,23 @@
 body {
     background-color: rgb(17, 17, 17);
-    font-family: 'Yuji Syuku', sans-serif; /* Font family for the entire document */
+    font-family: 'Yuji Syuku', sans-serif; 
+    color: rgba(255, 255, 255, 0.85); 
+}
+
+.container {
+    max-width: 800px; 
 }
 
 .grid-item {
-    margin-bottom: 20px; /* Add some space between grid items */
+    margin-bottom: 20px; 
+    max-width: 100%; 
 }
 
 .card {
-    border: 1px solid rgb(80, 80, 80); /* Card border color */
-    background-color: rgb(11, 11 ,11); /* Light grey background color */
+    border: 1px solid rgb(80, 80, 80); 
+    background-color: rgba(255, 255, 255, 0.1); 
 }
 
 .card-title, .card-text {
-    color: rgba(255, 255, 255, 0.9); /* Light grey text color */
+    color: rgba(255, 255, 255, 0.95); 
 }
