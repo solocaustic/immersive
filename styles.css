@@ -1,5 +1,6 @@
 body {
     background-color: rgb(17, 17, 17);
+    font-family: 'Yuji Syuku', sans-serif; /* Font family for the entire document */
 }
 
 .grid-item {
@@ -11,6 +12,5 @@ body {
 }
 
 .card-title, .card-text {
-    font-family: 'Yuji Syuku', sans-serif; /* Font family */
     color: rgba(255, 255, 255, 0.9); /* Light grey text color */
 }
