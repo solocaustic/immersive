@@ -4,10 +4,6 @@ body {
     color: rgba(255, 255, 255, 0.85);
 }
 
-.grid-item {
-    margin-bottom: 20px;
-}
-
 .card {
     border: 1px solid rgb(80, 80, 80);
     background-color: rgba(220, 220, 220, 0.1); 
