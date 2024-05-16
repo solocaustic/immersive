@@ -16,3 +16,11 @@ body {
 .card-title, .card-text {
     color: rgba(255, 255, 255, 0.95);
 }
+
+.container-narrow {
+    padding-left: 15px; 
+    padding-right: 15px; 
+    max-width: 800px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
