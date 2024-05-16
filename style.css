@@ -1,0 +1,13 @@
+.grid {
+    /* Add styles for the grid container */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    /* Add styles for the grid items */
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
