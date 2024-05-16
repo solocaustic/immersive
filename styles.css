@@ -4,13 +4,8 @@ body {
     color: rgba(255, 255, 255, 0.85);
 }
 
-.container {
-    max-width: 800px;
-}
-
 .grid-item {
     margin-bottom: 20px;
-    width: calc(33.33% - 20px);
 }
 
 .card {
