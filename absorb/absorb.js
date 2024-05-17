@@ -35,7 +35,6 @@ function draw() {
 function applyForces() {
   for (let i = 0; i < particles.length; i++) {
     let particle = particles[i];
-t
     let forceX = random(-0.5, 0.5);
     let forceY = random(-0.5, 0.5);
 
