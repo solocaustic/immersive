@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'YujiSyuku-Regular';
+    src: url('YujiSyuku-Regular.ttf') format('truetype');
+}
 
 
 body {
