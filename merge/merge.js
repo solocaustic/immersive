@@ -10,7 +10,7 @@ let mergeFont;
 let fadeInDuration = 5 * 60; 
 
 function preload() {
-  mergeFont = loadFont('./YujiSyuku-Regular.ttf'); 
+  mergeFont = loadFont('https://solocaustic.github.io/immersive/YujiSyuku-Regular.ttf'); 
 }
 
 function setup() {
