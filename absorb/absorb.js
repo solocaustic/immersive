@@ -7,7 +7,7 @@ let splashFade = 255;
 let fadeInDuration = 5 * 60;
 function preload() {
 
-  splashFont = loadFont('./YujiSyuku-Regular.ttf'); 
+  splashFont = loadFont('https://solocaustic.github.io/immersive/YujiSyuku-Regular.ttf'); 
 }
 
 function setup() {
