@@ -7,7 +7,7 @@ let splashFade = 255;
 let fadeInDuration = 5 * 60;
 function preload() {
 
-  splashFont = loadFont('YujiSyuku-Regular.ttf'); 
+  splashFont = loadFont('./YujiSyuku-Regular.ttf'); 
 }
 
 function setup() {
@@ -37,9 +37,7 @@ function applyForces() {
     let particle = particles[i];
     let forceX = random(-0.5, 0.5);
     let forceY = random(-0.5, 0.5);
-
     particle.acceleration.add(createVector(forceX, forceY));
-    
     let gravity = p5.Vector.sub(absorbPoint, particle.position);
     gravity.setMag(0.3); 
     particle.acceleration.add(gravity);
@@ -53,11 +51,9 @@ function applyForces() {
     }
   }
   
-
   for (let i = 0; i < smokeParticles.length; i++) {
     let particle = smokeParticles[i];
     
-
     let gravity = p5.Vector.sub(absorbPoint, particle);
     gravity.setMag(0.05); 
     particle.add(gravity);
@@ -70,11 +66,8 @@ function updateParticles() {
     let particle = particles[i];
 
     particle.velocity.add(particle.acceleration);
-
     particle.position.add(particle.velocity);
-
     particle.acceleration.mult(0);
-
     particle.position.x = (particle.position.x + width) % width;
     particle.position.y = (particle.position.y + height) % height;
   }
@@ -87,9 +80,7 @@ function displayParticles() {
   for (let i = 0; i < particles.length; i++) {
     let particle = particles[i];
     let resultPos = p5.Vector.add(particle.position, particle.velocity);
-    
     line(particle.position.x, particle.position.y, resultPos.x, resultPos.y);
-    
     fill(particle.color);
     noStroke();
     ellipse(particle.position.x, particle.position.y, 5);
@@ -97,7 +88,6 @@ function displayParticles() {
 }
 
 function addAtmos() {
-
   for (let i = 0; i < 5; i++) {
     let x = random(width);
     let y = random(height);
@@ -112,7 +102,6 @@ function animateAtmos() {
     let gravity = p5.Vector.sub(absorbPoint, particle);
     gravity.setMag(0.05); 
     particle.add(gravity);
-    
     fill(150, 50);
     noStroke();
     ellipse(particle.x, particle.y, 5);
@@ -131,7 +120,6 @@ function generateParticles() {
 
 function drawSplashScreen() {
   background(17); 
-
   fill(255); 
   textAlign(CENTER, CENTER);
   textSize(44);
@@ -139,16 +127,14 @@ function drawSplashScreen() {
   text("absorb", width / 2, height / 2);
 
   let fadeAmount = 255 / fadeInDuration;
-
   splashFade -= fadeAmount;
-
+  
   if (splashFade < 0) {
     splashFade = 0;
   }
 
   fill(17, splashFade); 
   rect(0, 0, width, height);
-
 
   fadeInDuration--;
 }
