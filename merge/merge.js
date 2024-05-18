@@ -36,7 +36,7 @@ function draw() {
 }
 
 function drawSplashScreen() {
-  background(0);
+  background(17);
   fill(255);
   textAlign(CENTER, CENTER);
   textSize(44);
@@ -44,7 +44,7 @@ function drawSplashScreen() {
   text("merge", width / 2, height / 2);
   let fadeAmount = 255 / fadeInDuration;
   splashFade = constrain(splashFade + fadeAmount, 0, 255);
-  fill(0, splashFade);
+  fill(17, splashFade);
   rect(0, 0, width, height);
   if (splashFade >= 255) {
     state = "main";
