@@ -3,7 +3,7 @@ let splashFade = 0;
 let fadeInDuration = 5 * 60; 
 
 function preload() {
-  splashFont = loadFont('YujiSyuku-Regular.ttf'); 
+  splashFont = loadFont('./YujiSyuku-Regular.ttf'); 
 }
 
 function setup() {
